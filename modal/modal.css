@@ -220,6 +220,7 @@ p {
   position: relative;
   background-color: #45caff;
   width: 25%;
+  min-width: 45vh;
   height: 53%;
   border-radius: 5vh;
   padding: 3vh 6vh;

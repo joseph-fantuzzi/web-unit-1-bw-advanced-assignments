@@ -2,3 +2,234 @@
 
 /* you need to implement styles for your dark and your light theme */
 /* which will be the default? up to you */
+
+/*Eric Meyer Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*start of CSS implementation*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.btn-container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 3vh 0;
+  width: 12vh;
+  padding: 0.75vh;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: white;
+}
+
+button div {
+  width: 4vh;
+  height: 4vh;
+  background-color: black;
+  border-radius: 50%;
+  transition: transform 0.15s ease-in;
+}
+
+.active-body {
+  background-color: #333333;
+}
+
+.active-div {
+  color: white;
+}
+
+.active-btn {
+  background-color: #333333;
+  border: 3px solid white;
+}
+
+.active-btn-div {
+  background-color: white;
+  transform: translateX(150%);
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    width: 10vh;
+  }
+
+  button div {
+    width: 3vh;
+    height: 3vh;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+
+  button {
+    width: 8vh;
+  }
+
+  button div {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+}

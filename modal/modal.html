@@ -6,11 +6,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
     <script type="text/javascript" src="modal.js" async></script>
   </head>
-  
+
   <body>
     <!-- you need to create HTML for the regular page and for the modal, even though only one will be showing at a time -->
     <!-- don't forget to create some element like a X to exit the modal when you're done -->
+    <div class="container">
+      <h1>The Crypto Revolution has Taken Course</h1>
+      <p>Are you ready to join?</p>
+      <button class="home-btn">Sign Me Up</button>
+    </div>
+    <footer>&copy Designed by Joseph Fantuzzi 2022</footer>
+    <div class="modal-container">
+      <div class="modal">
+        <h1>Please Create An Account</h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" />
+        </div>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+        </div>
+        <div class="btn-container">
+          <button class="modal-btn">Sign Up</button>
+        </div>
+        <span class="close-btn">X</span>
+      </div>
+    </div>
   </body>
 </html>

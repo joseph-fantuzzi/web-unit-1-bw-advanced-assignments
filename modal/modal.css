@@ -1,3 +1,292 @@
 /* don't forget your reset! */
 /* the visibility of your modal is based in CSS */
 /* it would be easier to get the html and css looking right for both first, then set the modal to be hidden */
+
+/*Eric Meyer Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Beginning of my CSS Implementation*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+  background: hsla(33, 100%, 53%, 1);
+  background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  height: 200vh;
+  padding-bottom: 5vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 3vh;
+}
+
+.home-btn {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: 3px solid white;
+  border-radius: 40vh;
+  padding: 1vh 1.5vh;
+  font-size: 1.5rem;
+  background-color: #45caff;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.home-btn:hover {
+  color: black;
+  border: 3px solid black;
+}
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.modal-container-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  background-color: #45caff;
+  width: 25%;
+  height: 53%;
+  border-radius: 5vh;
+  padding: 3vh 6vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.modal h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 5vh;
+}
+
+.modal div {
+  padding-bottom: 2vh;
+}
+
+.modal div label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.8vh;
+}
+
+.modal div input {
+  display: block;
+  width: 100%;
+  border-radius: 0.5vh;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5vh;
+}
+
+.modal div input:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-btn {
+  cursor: pointer;
+  padding: 1vh 1.5vh;
+  margin-top: 1vh;
+  border: 3px solid white;
+  border-radius: 2vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #ff930f;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-btn:hover {
+  color: black;
+  border: 3px solid black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}

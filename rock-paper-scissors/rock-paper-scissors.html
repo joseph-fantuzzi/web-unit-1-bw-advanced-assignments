@@ -6,22 +6,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="rock-paper-scissors.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
     <script type="text/javascript" src="rock-paper-scissors.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/e391ce7786.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- make an area to display some text about the game and to display who won the round -->
     <!-- make an area to display the human score and computer score -->
     <!-- make an area to display your move and the computer's move -->
-    <div>
+    <div class="container">
+      <section class="heading">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Pick your hand. First to 10 wins!</p>
+      </section>
+      <section class="scores">
+        <h2>Your Score: 0</h2>
+        <h2>Computer Score: 0</h2>
+      </section>
+      <section class="move">
+        <div class="human-move">
+          <i class="" id=""></i>
+        </div>
+        <div class="computer-move">
+          <i class="" id=""></i>
+        </div>
+      </section>
       <!-- this area will be where you pick your move -->
-      <button class="fas fa-hand-rock" id="rock"></button>
-      <button class="fas fa-hand-paper" id="paper"></button>
-      <button class="fas fa-hand-scissors" id="scissors"></button>
+      <section class="choice">
+        <button class="fas fa-hand-rock fa-8x" id="rock"></button>
+        <button class="fas fa-hand-paper fa-8x" id="paper"></button>
+        <button class="fas fa-hand-scissors fa-8x" id="scissors"></button>
+      </section>
+      <div class="win-modal">
+        <div>
+          <h1>You won!</h1>
+          <button>Play Again</button>
+        </div>
+      </div>
+      <div class="lose-modal">
+        <div>
+          <h1>You lost!</h1>
+          <button>Play Again</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
